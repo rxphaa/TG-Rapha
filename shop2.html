@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Responsive Ecommerce Website Sneakers</title>
+    </head>
+    <body>
+
+        <!--===== HEADER =====-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-grid">
+                <div class="nav__toogle" id="nav-toggle">
+                    <i class='bx bxs-grid bx-rotate-90' ></i>
+                </div>
+
+                <a href="" class="nav_logo">Roby</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="./index.html#home" class="nav__link"></a>Home</li>
+                        <li class="nav__item"><a href="./index.html#featured" class="nav__link ">Featured</a></li>
+                        <li class="nav__item"><a href="./index.html#new" class="nav__link ">New</a></li>
+                        <li class="nav__item"><a href="#Shop" class="nav__link active">Shop</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__shop"> <i class='bx bx-shopping-bag bx-flip-horizontal' ></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <section class="shopp" id="shopp">
+               <div class="shopp-container bd-grid">
+                <div class="shopp-dir">
+                <div class="shopp-img imagem-camiseta">
+                    <img src="assets/img/Personalizar/sREGULAR_FRONT.png" alt="" srcset="" id="imagem-produto">
+                    
+                </div>
+
+                <div class="alternar-imagem">
+                    <button class="button" id="botao-costas">Costas</button>
+                  </div>
+               </div>
+                
+               <div class="botoes">
+
+                <div class="button-group bt-grid">
+                    <h2 class="shop_title"> Peito Direita </h2>
+                        <div class="btt-grid">
+                            <button class="toggle-button" onclick="toggleExclusiveImageFD('image5')">Imagem 1</button>
+                            <button class="toggle-button" onclick="toggleExclusiveImageFD('image6')">Imagem 2</button>
+                            <button class="toggle-button" onclick="toggleExclusiveImageFD('image7')">Imagem 3</button>
+                            <button class="toggle-button" onclick="toggleExclusiveImageFD('image8')">Imagem 4</button>
+                        </div>
+                    </div>
+
+                    <div class="button-group bt-grid">
+                        <h2 class="shop_title"> Peito Esquerda </h2>
+                            <div class="btt-grid">
+                                <button class="toggle-button" onclick="toggleExclusiveImageFE('image9')">Imagem 1</button>
+                                <button class="toggle-button" onclick="toggleExclusiveImageFE('image10')">Imagem 2</button>
+                                <button class="toggle-button" onclick="toggleExclusiveImageFE('image11')">Imagem 3</button>
+                                <button class="toggle-button" onclick="toggleExclusiveImageFE('image12')">Imagem 4</button>
+                            </div>
+                        </div>
+
+                        <div class="button-group bt-grid">
+                            <h2 class="shop_title"> Peito Meio </h2>
+                                <div class="btt-grid">
+                                    <button class="toggle-button" onclick="toggleExclusiveImageFM('image13')">Imagem 1</button>
+                                    <button class="toggle-button" onclick="toggleExclusiveImageFM('image14')">Imagem 2</button>
+                                    <button class="toggle-button" onclick="toggleExclusiveImageFM('image15')">Imagem 3</button>
+                                    <button class="toggle-button" onclick="toggleExclusiveImageFM('image16')">Imagem 4</button>
+                                </div>
+                            </div>
+                
+               <div class="button-group bt-grid">
+                <h2 class="shop_title"> Selecionar Costas </h2>
+                    <div class="btt-grid">
+                        <button class="toggle-button" onclick="toggleExclusiveImageC('image1')">Imagem 1</button>
+                        <button class="toggle-button" onclick="toggleExclusiveImageC('image2')">Imagem 2</button>
+                        <button class="toggle-button" onclick="toggleExclusiveImageC('image3')">Imagem 3</button>
+                        <button class="toggle-button" onclick="toggleExclusiveImageC('image4')">Imagem 4</button>
+                    </div>
+                </div>
+
+            
+                </div>
+
+            <img id="image1" class="image-containerc" src="assets/img/Personalizar/Nova pasta/Mar 1.png" alt="Image 1">
+            <img id="image2" class="image-containerc" src="assets/img/Personalizar/Nova pasta/Mar 2.png" alt="Image 2">
+            <img id="image3" class="image-containerc" src="assets/img/Personalizar/Nova pasta/Montanha 1.png" alt="Image 3">
+            <img id="image4" class="image-containerc" src="assets/img/Personalizar/Nova pasta/Montanha 2.png" alt="Image 4">
+
+            <img id="image5" class="image-containerfd" src="assets/img/Personalizar/Nova pasta/Flor 1.png" alt="Image 1">
+            <img id="image6" class="image-containerfd" src="assets/img/Personalizar/Nova pasta/Flor 2.png" alt="Image 2">
+            <img id="image7" class="image-containerfd" src="assets/img/Personalizar/Nova pasta/Flor 3.png" alt="Image 3">
+            <img id="image8" class="image-containerfd" src="assets/img/Personalizar/Nova pasta/Logo 1.png" alt="Image 4">
+
+            <img id="image9" class="image-containerfe" src="assets/img/Personalizar/Nova pasta/Flor 1.png" alt="Image 1">
+            <img id="image10" class="image-containerfe" src="assets/img/Personalizar/Nova pasta/Flor 3.png" alt="Image 2">
+            <img id="image11" class="image-containerfe" src="assets/img/Personalizar/Nova pasta/Flor 2.png" alt="Image 3">
+            <img id="image12" class="image-containerfe" src="assets/img/Personalizar/Nova pasta/Logo 2.png" alt="Image 4">
+
+            <img id="image13" class="image-containerfm" src="assets/img/Personalizar/Nova pasta/Logo 1.png" alt="Image 1">
+            <img id="image14" class="image-containerfm" src="assets/img/Personalizar/Nova pasta/Logo 2.png" alt="Image 2">
+            <img id="image15" class="image-containerfm" src="assets/img/Personalizar/Nova pasta/Montanha 1.png" alt="Image 3">
+            <img id="image16" class="image-containerfm" src="assets/img/Personalizar/Nova pasta/Montanha 2.png" alt="Image 4">
+
+        </div>
+               
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        
+
+        <!--===== MAIN JS =====-->
+        <script src="script2.js"></script>
+        
+    </body>
+</html>

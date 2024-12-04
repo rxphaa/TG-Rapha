@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Responsive Ecommerce Website Sneakers</title>
+    </head>
+    <body>
+
+        <!--===== HEADER =====-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-grid">
+                <div class="nav__toogle" id="nav-toggle">
+                    <i class='bx bxs-grid bx-rotate-90' ></i>
+                </div>
+
+                <a href="" class="nav_logo">Roby</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="./index.html#home" class="nav__link"></a>Home</li>
+                        <li class="nav__item"><a href="./index.html#featured" class="nav__link ">Featured</a></li>
+                        <li class="nav__item"><a href="./index.html#new" class="nav__link ">New</a></li>
+                        <li class="nav__item"><a href="#Shop" class="nav__link active">Shop</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__shop"> <i class='bx bx-shopping-bag bx-flip-horizontal' ></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <section class="shopp" id="shopp">
+               <div class="shopp-container bd-grid">
+                <div class="shopp-dir">
+                <div class="shopp-img imagem-camiseta">
+                    <img src="assets/img/Personalizar/sREGULAR_FRONT.png" alt="" srcset="" id="imagem-produto">
+                    
+                </div>
+
+                <div class="alternar-imagem">
+                    <button class="button" id="botao-costas">Costas</button>
+                  </div>
+               </div>
+                
+               <div class="opcoes">
+                <div class="grupo" data-categoria="frente-direita">
+                  <h4>Frente Direita</h4>
+                  <button data-img="assets/img/Personalizar/Nova pasta/Flor 1.png">1</button>
+                  <button data-img="assets/img/Personalizar/Nova pasta/Flor 2.png">2</button>
+                  <button data-img="assets/img/Personalizar/Nova pasta/Flor 3.png">3</button>
+                  <button data-img="assets/img/Personalizar/Nova pasta/Logo 2.png">4</button>
+                </div>
+                <div class="grupo" data-categoria="frente-esquerda">
+                  <h4>Frente Esquerda</h4>
+                  <button data-img="assets/img/Personalizar/Nova pasta/Flor 1.png">1</button>
+                  <button data-img="assets/img/Personalizar/Nova pasta/Flor 3.png">2</button>
+                  <button data-img="assets/img/Personalizar/Nova pasta/Flor 2.png">3</button>
+                  <button data-img="assets/img/Personalizar/Nova pasta/Logo 1.png">4</button>
+                </div>
+                <div class="grupo" data-categoria="frente-meio">
+                  <h4>Frente Meio</h4>
+                  <button data-img="assets/img/Personalizar/Nova pasta/Logo 2.png">1</button>
+                  <button data-img="assets/img/Personalizar/Nova pasta/Logo 1.png">2</button>
+                  <button data-img="frente-meio-3.jpg">3</button>
+                  <button data-img="frente-meio-4.jpg">4</button>
+                </div>
+                <div class="grupo" data-categoria="costas">
+                  <h4>Costas</h4>
+                  <button data-img="assets/img/Personalizar/Nova pasta/Mar 1.png">1</button>
+                  <button data-img="assets/img/Personalizar/Nova pasta/Mar 2.png">2</button>
+                  <button data-img="assets/img/Personalizar/Nova pasta/Montanha 1.png">3</button>
+                  <button data-img="assets/img/Personalizar/Nova pasta/Montanha 2.png">4</button>
+                </div>
+              </div>
+              
+              <div id="imagem-container">
+                <div id="frente-direita" class="categoria-container"></div>
+                <div id="frente-esquerda" class="categoria-container"></div>
+                <div id="frente-meio" class="categoria-container"></div>
+                <div id="costas" class="categoria-container"></div>
+              </div>
+
+                 
+               </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+        
+    </body>
+</html>
